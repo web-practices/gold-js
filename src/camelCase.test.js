@@ -12,13 +12,13 @@ describe('when using remove', () => {
 
   it('should work with normal words', () => {
     expect(camelCase('safe HTML')).toBe('safeHtml');
-    expect(camelCase('escape HTML entities')).toBe('escapeHtmlEntities');
+    expect(camelCase('escape html entities')).toBe('escapeHtmlEntities');
     expect(camelCase('XML Http Request')).toBe('xmlHttpRequest');
   });
 
   it('should work with punctuations', () => {
     expect(camelCase('safe+HTML')).toBe('safeHtml');
-    expect(camelCase('escape-HTML*entities')).toBe('escapeHtmlEntities');
+    expect(camelCase('escape-html*entities')).toBe('escapeHtmlEntities');
     expect(camelCase('XML$Http$Request')).toBe('xmlHttpRequest');
   });
 
